@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>স্বপ্নের ঠিকানা এগ্রো</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap');
+        body { font-family: 'Hind Siliguri', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header Section -->
+    <header class="bg-green-700 text-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <i class="fa-solid fa-seedling text-3xl"></i>
+                <div>
+                    <h1 class="text-xl md:text-2xl font-bold">স্বপ্নের ঠিকানা এগ্রো</h1>
+                    <p class="text-xs text-green-200">প্রোঃ মোঃ উজ্জল হোসেন</p>
+                </div>
+            </div>
+            <div class="flex items-center space-x-2">
+                <button onclick="openAdminLogin()" class="bg-green-800 hover:bg-green-900 text-white px-3 py-1.5 rounded text-sm transition">
+                    <i class="fa-solid fa-lock mr-1"></i> অ্যাডমিন লগইন
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-green-600 text-white py-12 px-4 text-center">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">খাঁটি ও ভেজালমুক্ত কৃষিপণ্য ও খামারের দুধ</h2>
+            <p class="text-lg text-green-100 mb-6">আমাদের খামারের সুস্থ-সবল গরুর খাঁটি দুধ এবং নিজেদের জমিতে উৎপাদিত ধান, সরিষা, আলু, লতিকচু ও কচুর লতি সংগ্রহ করুন সরাসরি।</p>
+            <a href="#products" class="bg-white text-green-700 font-bold px-6 py-3 rounded-full shadow hover:bg-green-50 transition">পণ্যগুলো দেখুন</a>
+        </div>
+    </section>
+
+    <!-- Owner Profile Section -->
+    <section class="py-10 bg-white border-b">
+        <div class="container mx-auto px-4 max-w-4xl flex flex-col md:flex-row items-center gap-8">
+            <div class="w-40 h-40 rounded-full overflow-hidden shadow-lg border-4 border-green-600 flex-shrink-0">
+                <img src="1000005240.jpg" alt="মোঃ উজ্জল হোসেন" class="w-full h-full object-cover">
+            </div>
+            <div class="text-center md:text-left">
+                <h3 class="text-2xl font-bold text-gray-800">মোঃ উজ্জল হোসেন</h3>
+                <p class="text-green-600 font-semibold mb-2">প্রোপ্রাইটর, স্বপ্নের ঠিকানা এগ্রো</p>
+                <p class="text-gray-600 text-sm mb-4">আমরা আপনাদের সুস্বাস্থ্য নিশ্চিত করতে সম্পূর্ণ প্রাকৃতিকভাবে খামার পরিচালনা এবং কৃষিপণ্য উৎপাদন করে আসছি। আমাদের প্রতিটি পণ্য শতভাগ মানসম্মত ও ভেজালমুক্ত।</p>
+                <div class="flex flex-wrap justify-center md:justify-start gap-3">
+                    <a href="tel:01714659640" class="bg-green-100 text-green-800 px-3 py-1.5 rounded text-sm font-medium"><i class="fa-solid fa-phone mr-1"></i> ০১৭১৪-৬৫৯৬৪০</a>
+                    <a href="https://wa.me/+8801714659640" target="_blank" class="bg-emerald-600 text-white px-3 py-1.5 rounded text-sm font-medium"><i class="fa-brands fa-whatsapp mr-1"></i> হোয়াটসঅ্যাপ</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-12 px-4 container mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-8 text-green-800">আমাদের খামার ও কৃষির পণ্যসমূহ</h2>
+        
+        <div id="product-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Product 1 -->
+            <div class="bg-white rounded-lg shadow p-5 border border-gray-100 flex flex-col justify-between">
+                <div>
+                    <div class="bg-green-50 h-40 rounded mb-4 flex items-center justify-center text-green-600 text-4xl">
+                        <i class="fa-solid fa-glass-water"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">গরুর খাঁটি দুধ</h3>
+                    <p class="text-gray-600 text-sm mb-4">খামারের সুস্থ ও সবল দেশি-বিদেশি গরুর প্রতিদিনের তাজা ও পুষ্টিকর খাঁটি দুধ।</p>
+                </div>
+                <button onclick="orderProduct('গরুর খাঁটি দুধ')" class="w-full bg-green-600 hover:bg-green-700 text-white py-2 rounded font-medium transition"><i class="fa-brands fa-whatsapp mr-1"></i> অর্ডার করুন</button>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="bg-white rounded-lg shadow p-5 border border-gray-100 flex flex-col justify-between">
+                <div>
+                    <div class="bg-yellow-50 h-40 rounded mb-4 flex items-center justify-center text-yellow-600 text-4xl">
+                        <i class="fa-solid fa-wheat-awn"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">মানসম্মত ধান</h3>
+                    <p class="text-gray-600 text-sm mb-4">আমাদের নিজস্ব জমিতে উৎপাদিত উন্নত জাতের পরিষ্কার ও ভালো মানের ধান।</p>
+                </div>
+                <button onclick="orderProduct('মানসম্মত ধান')" class="w-full bg-green-600 hover:bg-green-700 text-white py-2 rounded font-medium transition"><i class="fa-brands fa-whatsapp mr-1"></i> অর্ডার করুন</button>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="bg-white rounded-lg shadow p-5 border border-gray-100 flex flex-col justify-between">
+                <div>
+                    <div class="bg-amber-50 h-40 rounded mb-4 flex items-center justify-center text-amber-600 text-4xl">
+                        <i class="fa-solid fa-bowl-rice"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">সরিষা</h3>
+                    <p class="text-gray-600 text-sm mb-4">খাঁটি তেল উৎপাদনের জন্য উপযোগী আমাদের মাঠের প্রিমিয়াম মানের সরিষা।</p>
+                </div>
+                <button onclick="orderProduct('সরিষা')" class="w-full bg-green-600 hover:bg-green-700 text-white py-2 rounded font-medium transition"><i class="fa-brands fa-whatsapp mr-1"></i> অর্ডার করুন</button>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="bg-white rounded-lg shadow p-5 border border-gray-100 flex flex-col justify-between">
+                <div>
+                    <div class="bg-orange-50 h-40 rounded mb-4 flex items-center justify-center text-orange-600 text-4xl">
+                        <i class="fa-solid fa-carrot"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">আলু</h3>
+                    <p class="text-gray-600 text-sm mb-4">উৎপাদনকৃত তাজা, সুস্বাদু ও মানসম্পন্ন আলু পাইকারি ও খুচরা মূল্যে প্রাপ্ত।</p>
+                </div>
+                <button onclick="orderProduct('আলু')" class="w-full bg-green-600 hover:bg-green-700 text-white py-2 rounded font-medium transition"><i class="fa-brands fa-whatsapp mr-1"></i> অর্ডার করুন</button>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="bg-white rounded-lg shadow p-5 border border-gray-100 flex flex-col justify-between">
+                <div>
+                    <div class="bg-lime-50 h-40 rounded mb-4 flex items-center justify-center text-lime-600 text-4xl">
+                        <i class="fa-solid fa-seedling"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">লতিকচু ও কচুর লতি</h3>
+                    <p class="text-gray-600 text-sm mb-4">পুষ্টিগুণে ভরপুর নরম ও সুস্বাদু কচুর লতি এবং লতিকচু নিয়মিত সরবরাহ করা হয়।</p>
+                </div>
+                <button onclick="orderProduct('লতিকচু ও কচুর লতি')" class="w-full bg-green-600 hover:bg-green-700 text-white py-2 rounded font-medium transition"><i class="fa-brands fa-whatsapp mr-1"></i> অর্ডার করুন</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="bg-gray-800 text-white py-12 px-4">
+        <div class="container mx-auto max-w-4xl text-center">
+            <h2 class="text-2xl font-bold mb-6">যোগাযোগ করুন</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm mb-8">
+                <div>
+                    <i class="fa-solid fa-phone text-green-400 text-xl mb-2"></i>
+                    <p class="font-semibold">মোবাইল নম্বরসমূহ</p>
+                    <p class="text-gray-300">০১৬১৪-৬৫৯৬৪০, ০১৭১৪-৬৫৯৬৪০<br>০১৮১২-৬৫৯৬৪০, ০১৯১৪-৬৫৯৬৪০</p>
+                </div>
+                <div>
+                    <i class="fa-brands fa-whatsapp text-green-400 text-xl mb-2"></i>
+                    <p class="font-semibold">হোয়াটসঅ্যাপ</p>
+                    <p class="text-gray-300">+8801714659640</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-envelope text-green-400 text-xl mb-2"></i>
+                    <p class="font-semibold">ইমেইল</p>
+                    <p class="text-gray-300">uzzal.kahaloo@gmail.com</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-6 text-gray-400 text-xs">
+                &copy; ২০২৬ স্বপ্নের ঠিকানা এগ্রো। সর্বস্বত্ব সংরক্ষিত। প্রোঃ মোঃ উজ্জল হোসেন।
+                <div class="mt-2">
+                    <button onclick="openAdminLogin()" class="text-gray-500 hover:text-gray-300 underline">অ্যাডমিন লগইন</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admin Modal -->
+    <div id="adminModal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50 p-4">
+        <div class="bg-white rounded-lg max-w-md w-full p-6 relative">
+            <button onclick="closeAdminLogin()" class="absolute top-4 right-4 text-gray-500 hover:text-gray-800 text-xl"><i class="fa-solid fa-xmark"></i></button>
+            <h3 class="text-xl font-bold mb-4 text-green-800">অ্যাডমিন প্যানেল লগইন</h3>
+            <div id="loginFormContainer">
+                <div class="mb-4">
+                    <label class="block text-sm font-medium text-gray-700 mb-1">ইমেইল</label>
+                    <input type="email" id="adminEmail" value="uzzal.kahaloo@gmail.com" class="w-full border rounded px-3 py-2 text-sm bg-gray-100" readonly>
+                </div>
+                <div class="mb-4">
+                    <label class="block text-sm font-medium text-gray-700 mb-1">পাসওয়ার্ড</label>
+                    <input type="password" id="adminPassword" placeholder="পাসওয়ার্ড দিন (admin123)" class="w-full border rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-green-500">
+                </div>
+                <button onclick="handleLogin()" class="w-full bg-green-600 hover:bg-green-700 text-white py-2 rounded font-medium transition">লগইন করুন</button>
+            </div>
+            <div id="adminDashboardContainer" class="hidden">
+                <p class="text-green-600 font-semibold mb-4"><i class="fa-solid fa-circle-check"></i> সফলভাবে লগইন হয়েছে!</p>
+                <div class="bg-green-50 p-4 rounded mb-4">
+                    <h4 class="font-bold text-sm mb-2 text-green-900">নতুন পণ্য যোগ করুন</h4>
+                    <input type="text" id="newProdName" placeholder="পণ্যের নাম" class="w-full border rounded px-3 py-1.5 text-sm mb-2">
+                    <input type="text" id="newProdDesc" placeholder="পণ্যের বিবরণ" class="w-full border rounded px-3 py-1.5 text-sm mb-2">
+                    <button onclick="addNewProduct()" class="bg-green-600 text-white text-xs px-4 py-2 rounded font-medium">পণ্য যোগ করুন</button>
+                </div>
+                <button onclick="closeAdminLogin()" class="w-full bg-gray-200 text-gray-800 py-2 rounded text-sm font-medium">বন্ধ করুন</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function orderProduct(productName) {
+            const phone = "+8801714659640";
+            const message = `আসসালামু আলাইকুম, আমি '${productName}' নিতে চাই। দয়া করে বিস্তারিত জানাবেন।`;
+            const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+            window.open(url, '_blank');
+        }
+
+        function openAdminLogin() {
+            document.getElementById('adminModal').classList.remove('hidden');
+            document.getElementById('adminModal').classList.add('flex');
+        }
+
+        function closeAdminLogin() {
+            document.getElementById('adminModal').classList.add('hidden');
+            document.getElementById('adminModal').classList.remove('flex');
+        }
+
+        function handleLogin() {
+            const pass = document.getElementById('adminPassword').value;
+            if(pass === 'admin123') {
+                document.getElementById('loginFormContainer').classList.add('hidden');
+                document.getElementById('adminDashboardContainer').classList.remove('hidden');
+            } else {
+                alert('ভুল পাসওয়ার্ড! সঠিক পাসওয়ার্ড দিন (admin123)');
+            }
+        }
+
+        function addNewProduct() {
+            const name = document.getElementById('newProdName').value;
+            const desc = document.getElementById('newProdDesc').value;
+            if(!name) {
+                alert('অনুগ্রহ করে পণ্যের নাম লিখুন।');
+                return;
+            }
+            const grid = document.getElementById('product-grid');
+            const card = document.createElement('div');
+            card.className = 'bg-white rounded-lg shadow p-5 border border-gray-100 flex flex-col justify-between';
+            card.innerHTML = `
+                <div>
+                    <div class="bg-green-50 h-40 rounded mb-4 flex items-center justify-center text-green-600 text-4xl">
+                        <i class="fa-solid fa-box"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">${name}</h3>
+                    <p class="text-gray-600 text-sm mb-4">${desc || 'তাজা ও মানসম্মত কৃষিপণ্য।'}</p>
+                </div>
+                <button onclick="orderProduct('${name}')" class="w-full bg-green-600 hover:bg-green-700 text-white py-2 rounded font-medium transition"><i class="fa-brands fa-whatsapp mr-1"></i> অর্ডার করুন</button>
+            `;
+            grid.appendChild(card);
+            document.getElementById('newProdName').value = '';
+            document.getElementById('newProdDesc').value = '';
+            alert('নতুন পণ্য সফলভাবে যুক্ত করা হয়েছে!');
+            closeAdminLogin();
+        }
+    </script>
+</body>
+</html>

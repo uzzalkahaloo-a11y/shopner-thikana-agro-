@@ -192,7 +192,7 @@ I'llok<!DOCTYPE html>
             const phone = "+8801714659640";
             const message = `আসসালামু আলাইকুম, আমি '${productName}' নিতে চাই। দয়া করে বিস্তারিত জানাবেন।`;
             const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
-            window.open(url, '_blank');
+           window.location.href = url;
         }
 
         function openAdminLogin() {
